@@ -1,0 +1,14 @@
+%position {
+    position: absolute;
+    z-index: 1;
+}
+
+%container {
+    width: 1166px;
+    margin: 0 auto 0 auto;
+}
+
+%goFlex {
+    display: flex;
+    justify-content: space-between;
+}

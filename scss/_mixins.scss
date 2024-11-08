@@ -1,0 +1,7 @@
+@mixin text-styles($font-family: "Roboto", $color: #8A8787, $font-weight: 700, $line-height: 11px, $font-size: 10px) {
+    font-family: $font-family;
+    color: $color;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    font-size: $font-size;
+}

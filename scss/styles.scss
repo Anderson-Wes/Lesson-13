@@ -1,0 +1,158 @@
+@import 'reset';
+@import 'variables';
+@import 'placeholder';
+@import 'mixins';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #F1F1F1;
+
+    header {
+        @extend %container;
+
+        .header {
+            width: 1166px;
+            position: fixed;
+            z-index: 1;
+            top: 21px;
+            margin-bottom: 42px;
+
+            .navigation {
+                display: inline-block;
+            }
+
+            li {
+                display: inline-block;
+                margin-right: 35px;
+                @include text-styles("Roboto", #000000, 700, 12.89px, 11px);
+                text-transform: uppercase;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    main {
+        @extend %container;
+
+        h1 {
+            @include text-styles("Roboto", #000000, 700, 28.13px, 24px);
+            text-transform: uppercase;
+            margin: 76px 0 27px 0;
+        }
+
+        .widgets {
+            @extend %goFlex;
+
+            .widget {
+                position: relative;
+                width: 362px;
+                height: 357px;
+                background-color: #FFFFFF;
+                border-radius: 5px;
+
+                img {
+                    position: absolute;
+                }
+
+                h2 {
+                    @extend %position;
+                    margin: 37px 0 0 41px;
+                    @include text-styles("Roboto", #FFFFFF, 700, 23.44px, 20px);
+                }
+
+                .description {
+                    position: absolute;
+                    bottom: 63px;
+                    @include text-styles("Roboto", #8A8787, 700, 11.72px, 10px);
+                    margin-left: 37px;
+                }
+
+                .timer {
+                    position: absolute;
+                    bottom: 36px;
+                    left: 36px;
+
+                    .timer_icon {
+                        vertical-align: middle;
+                        margin: 0 11px 0 40px;
+                    }
+
+                    .time {
+                        @include text-styles("Roboto", #8A8787, 700, 11.72px, 10px);
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+        .lower_widgets {
+            @extend %goFlex;
+
+            .left_widgets {
+                margin-bottom: 36px;
+
+                .widget_with_title {
+                    position: relative;
+                    margin-bottom: 42px;
+
+                    h2 {
+                        @include text-styles("Roboto", #FFFFFF, 700, 23.44px, 20px);
+                        @extend %position;
+                        top: 203px;
+                        left: 278px;
+                    }
+                }
+            }
+
+            img {
+                display: block;
+            }
+
+            .elephant_img {
+                margin: 95px 0;
+            }
+        }
+    }
+
+    footer {
+        background-color: #243043;
+        height: 200px;
+
+        .footer {
+            @extend %container;
+            position: relative;
+            width: 1166px;
+
+            .left_nav,
+            .middle_nav,
+            .right_nav {
+                display: inline-block;
+                margin: 59px 100px 0 0;
+                vertical-align: top;
+            }
+        }
+
+        p {
+            @include text-styles("Roboto", #FFFFFF, 400, 14.06px, 12px);
+            display: inline-block;
+            margin-top: 58px;
+        }
+
+        img {
+            position: absolute;
+            top: 58px;
+            right: 0;
+        }
+
+        li {
+            @include text-styles("Roboto", #818687, 700, 14.06px, 12px);
+            margin-bottom: 14px;
+        }
+    }
+}

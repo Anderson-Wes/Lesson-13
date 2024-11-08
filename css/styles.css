@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body main .lower_widgets .left_widgets .widget_with_title h2, body main .widgets .widget h2 {
+  position: absolute;
+  z-index: 1;
+}
+
+body footer .footer, body main, body header {
+  width: 1166px;
+  margin: 0 auto 0 auto;
+}
+
+body main .lower_widgets, body main .widgets {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  background-color: #F1F1F1;
+}
+body header .header {
+  width: 1166px;
+  position: fixed;
+  z-index: 1;
+  top: 21px;
+  margin-bottom: 42px;
+}
+body header .header .navigation {
+  display: inline-block;
+}
+body header .header li {
+  display: inline-block;
+  margin-right: 35px;
+  font-family: "Roboto";
+  color: #000000;
+  font-weight: 700;
+  line-height: 12.89px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+body header .header img {
+  vertical-align: middle;
+}
+body main h1 {
+  font-family: "Roboto";
+  color: #000000;
+  font-weight: 700;
+  line-height: 28.13px;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 76px 0 27px 0;
+}
+body main .widgets .widget {
+  position: relative;
+  width: 362px;
+  height: 357px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+body main .widgets .widget img {
+  position: absolute;
+}
+body main .widgets .widget h2 {
+  margin: 37px 0 0 41px;
+  font-family: "Roboto";
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 23.44px;
+  font-size: 20px;
+}
+body main .widgets .widget .description {
+  position: absolute;
+  bottom: 63px;
+  font-family: "Roboto";
+  color: #8A8787;
+  font-weight: 700;
+  line-height: 11.72px;
+  font-size: 10px;
+  margin-left: 37px;
+}
+body main .widgets .widget .timer {
+  position: absolute;
+  bottom: 36px;
+  left: 36px;
+}
+body main .widgets .widget .timer .timer_icon {
+  vertical-align: middle;
+  margin: 0 11px 0 40px;
+}
+body main .widgets .widget .timer .time {
+  font-family: "Roboto";
+  color: #8A8787;
+  font-weight: 700;
+  line-height: 11.72px;
+  font-size: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+body main .lower_widgets .left_widgets {
+  margin-bottom: 36px;
+}
+body main .lower_widgets .left_widgets .widget_with_title {
+  position: relative;
+  margin-bottom: 42px;
+}
+body main .lower_widgets .left_widgets .widget_with_title h2 {
+  font-family: "Roboto";
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 23.44px;
+  font-size: 20px;
+  top: 203px;
+  left: 278px;
+}
+body main .lower_widgets img {
+  display: block;
+}
+body main .lower_widgets .elephant_img {
+  margin: 95px 0;
+}
+body footer {
+  background-color: #243043;
+  height: 200px;
+}
+body footer .footer {
+  position: relative;
+  width: 1166px;
+}
+body footer .footer .left_nav,
+body footer .footer .middle_nav,
+body footer .footer .right_nav {
+  display: inline-block;
+  margin: 59px 100px 0 0;
+  vertical-align: top;
+}
+body footer p {
+  font-family: "Roboto";
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 14.06px;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 58px;
+}
+body footer img {
+  position: absolute;
+  top: 58px;
+  right: 0;
+}
+body footer li {
+  font-family: "Roboto";
+  color: #818687;
+  font-weight: 700;
+  line-height: 14.06px;
+  font-size: 12px;
+  margin-bottom: 14px;
+}/*# sourceMappingURL=styles.css.map */
